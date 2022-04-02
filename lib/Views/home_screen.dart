@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kiulinks_app/main.dart';
 import 'package:kiulinks_app/utilities/SizeConfig.dart';
 
 class home extends StatelessWidget {
@@ -30,9 +31,7 @@ class home extends StatelessWidget {
                 ),
                 Text(
                   "Buenos días!",
-                  style: TextStyle(
-                    fontSize: 3 * SizeConfig.blockSizeHorizontal,
-                  ),
+                  style: Theme.of(context).textTheme.headline5,
                 ),
               ]),
             ),
@@ -65,7 +64,7 @@ class home extends StatelessWidget {
               ),
               Text(
                 "Elige tu ruta",
-                style: Theme.of(context).textTheme.headline4,
+                style: Theme.of(context).textTheme.headline1,
               )
             ],
           ),
@@ -77,37 +76,106 @@ class home extends StatelessWidget {
         //Join and Schedule class route cards
         Row(
           children: [
-            Container(
-              margin: EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height * 0.27,
-                  left: MediaQuery.of(context).size.width * 0.07),
-              height: MediaQuery.of(context).size.height * 0.22,
-              width: MediaQuery.of(context).size.width * 0.4,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30), color: Colors.white),
+            GestureDetector(
+              onTap: ()=>{},
+              child: Container(
+                margin: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * 0.27,
+                    left: MediaQuery.of(context).size.width * 0.07),
+                height: MediaQuery.of(context).size.height * 0.22,
+                width: MediaQuery.of(context).size.width * 0.4,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30), color: Colors.white),
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 10,
+                    ),
+                    CircleAvatar(
+                      radius: MediaQuery.of(context).size.width * 0.1,
+                      backgroundColor: Theme.of(context).primaryColor,
+                      child: Container(
+                          child: Image.asset(
+                        "assets/live.png",
+                        width: MediaQuery.of(context).size.width * 0.13,
+                      )),
+                    ),
+                    Text(
+                      "En vivo",
+                      style: Theme.of(context).textTheme.headline2,
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    SizedBox(
+                        width: MediaQuery.of(context).size.width * 0.35,
+                        child: Text(
+                          "Ingresa a tu próxima clase",
+                          textAlign: TextAlign.center,
+                          style: Theme.of(context).textTheme.headline5,
+                        )),
+                  ],
+                ),
+              ),
             ),
             SizedBox(
               width: MediaQuery.of(context).size.width * 0.06,
             ),
-            Container(
-              margin: EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height * 0.27,
-                  right: MediaQuery.of(context).size.width * 0.07),
-              height: MediaQuery.of(context).size.height * 0.22,
-              width: MediaQuery.of(context).size.width * 0.4,
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(30), color: Colors.white),
+            GestureDetector(
+              onTap: ()=>{},
+              child: Container(
+                margin: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * 0.27,
+                    right: MediaQuery.of(context).size.width * 0.07),
+                height: MediaQuery.of(context).size.height * 0.22,
+                width: MediaQuery.of(context).size.width * 0.4,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(30), color: Colors.white),
+                child: Column(
+                  children: [
+                    SizedBox(
+                      height: 10,
+                    ),
+                    CircleAvatar(
+                      radius: MediaQuery.of(context).size.width * 0.1,
+                      backgroundColor: Theme.of(context).primaryColor,
+                      child: Container(
+                          child: Image.asset(
+                            "assets/gift.png",
+                            width: MediaQuery.of(context).size.width * 0.13,
+                          )),
+                    ),
+                    Text(
+                      "Descurbre",
+                      style: Theme.of(context).textTheme.headline2,
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    SizedBox(
+                        width: MediaQuery.of(context).size.width * 0.35,
+                        child: Text(
+                          "Nuestros servicios gratis",
+                          textAlign: TextAlign.center,
+                          style: Theme.of(context).textTheme.headline5,
+                        )),
+                  ],
+                ),
+              ),
             ),
           ],
         ),
-        Container(
-            margin: EdgeInsets.only(
-                top: MediaQuery.of(context).size.height * 0.51,
-                left: MediaQuery.of(context).size.width * 0.07),
-            child: Text(
-              "Conectar",
-              style: Theme.of(context).textTheme.headline4,
-            )),
+        GestureDetector(
+          onTap: ()=>{},
+          child: Container(
+              margin: EdgeInsets.only(
+                  top: MediaQuery.of(context).size.height * 0.51,
+                  left: MediaQuery.of(context).size.width * 0.07),
+              child: Text(
+                "Conectar",
+                style: Theme.of(context).textTheme.headline1,
+              )),
+        ),
         Container(
           height: MediaQuery.of(context).size.height * 0.15,
           decoration: BoxDecoration(
@@ -116,15 +184,75 @@ class home extends StatelessWidget {
               top: MediaQuery.of(context).size.height * 0.57,
               left: MediaQuery.of(context).size.width * 0.07,
               right: MediaQuery.of(context).size.width * 0.07),
+          child: Row(
+            children: [
+              SizedBox(width: MediaQuery.of(context).size.width * 0.06,),
+              CircleAvatar(
+              radius: MediaQuery.of(context).size.width * 0.1,
+              backgroundColor: Theme.of(context).primaryColor,
+              child: Container(
+                  child: Image.asset(
+                    "assets/community.png",
+                    width: MediaQuery.of(context).size.width * 0.13,
+                  )),
+            ),
+              SizedBox(width: MediaQuery.of(context).size.width * 0.06,),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Comunidad", style: Theme.of(context).textTheme.headline2,),
+                  Container(
+                    width: MediaQuery.of(context).size.width * 0.5,
+                    child: Text(
+                      "Acelera tu aprendizaje",
+                      style: Theme.of(context).textTheme.headline5,
+                    ),
+                  ),
+                ],
+              )
+          ]),
+
         ),
-        Container(
-          height: MediaQuery.of(context).size.height * 0.15,
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30), color: Colors.white),
-          margin: EdgeInsets.only(
-              top: MediaQuery.of(context).size.height * 0.75,
-              left: MediaQuery.of(context).size.width * 0.07,
-              right: MediaQuery.of(context).size.width * 0.07),
+        GestureDetector(
+          onTap: ()=>{},
+          child: Container(
+            height: MediaQuery.of(context).size.height * 0.15,
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30), color: Colors.white),
+            margin: EdgeInsets.only(
+                top: MediaQuery.of(context).size.height * 0.75,
+                left: MediaQuery.of(context).size.width * 0.07,
+                right: MediaQuery.of(context).size.width * 0.07),
+            child: Row(
+                children: [
+                  SizedBox(width: MediaQuery.of(context).size.width * 0.06,),
+                  CircleAvatar(
+                    radius: MediaQuery.of(context).size.width * 0.1,
+                    backgroundColor: Theme.of(context).primaryColor,
+                    child: Container(
+                        child: Image.asset(
+                          "assets/chat.png",
+                          width: MediaQuery.of(context).size.width * 0.13,
+                        )),
+                  ),
+                  SizedBox(width: MediaQuery.of(context).size.width * 0.06,),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Chat", style: Theme.of(context).textTheme.headline2,),
+                      Container(
+                        width: MediaQuery.of(context).size.width * 0.5,
+                        child: Text(
+                          "Hablar con un representante",
+                          style: Theme.of(context).textTheme.headline5,
+                        ),
+                      ),
+                    ],
+                  )
+                ]),
+          ),
         )
       ],
     );
