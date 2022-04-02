@@ -25,8 +25,8 @@ class MyApp extends StatelessWidget {
         textTheme: TextTheme(
           headline2: TextStyle(fontFamily: 'Poppins', color: Colors.white, fontWeight: FontWeight.bold ,fontSize: 5.5 * SizeConfig.blockSizeVertical), //for gift screen title
           headline3: TextStyle(fontFamily: 'Poppins', color: Colors.white, fontSize: 2.5* SizeConfig.blockSizeVertical,), //for gift screen subtitle
-          headline4: TextStyle(fontFamily: 'Poppins', color: Colors.black, fontSize: 2.3 * SizeConfig.blockSizeVertical, fontWeight: FontWeight.w800), //for home screen cards main text
-          headline5: TextStyle(fontFamily: 'Poppins', color: Colors.black, fontSize: 2* SizeConfig.blockSizeVertical,), //for no notification text in gift and notifications screens
+          headline4: TextStyle(fontFamily: 'Poppins', color: Colors.black, fontSize: 3.5 * SizeConfig.blockSizeVertical, fontWeight: FontWeight.w800), //for home screen heading and cards
+          headline5: TextStyle(fontFamily: 'Poppins', color: Colors.black, fontSize: 2.2* SizeConfig.blockSizeVertical,), //for no notification text in gift and notifications screens
         ),
         primaryColor: Color(hexColor('#A700FA')),
         buttonColor: Color(hexColor('#76C734')),

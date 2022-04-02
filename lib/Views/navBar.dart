@@ -56,19 +56,19 @@ class _navigationState extends State<navigation> {
                 // ignore: prefer_const_literals_to_create_immutables
                 items: [
                   BottomNavigationBarItem(
-                      icon: ImageIcon(AssetImage("assets/plans icon.png"), size: 7.5 * SizeConfig.blockSizeHorizontal),
+                      icon: ImageIcon(AssetImage("assets/plans icon.png"), size: 6 * SizeConfig.blockSizeHorizontal),
                       label: ''),
                   BottomNavigationBarItem(
-                      icon: ImageIcon(AssetImage("assets/library icon.png"), size: 7 * SizeConfig.blockSizeHorizontal),
+                      icon: ImageIcon(AssetImage("assets/library icon.png"), size: 5.5 * SizeConfig.blockSizeHorizontal),
                       label: ''),
                   BottomNavigationBarItem(
-                      icon: ImageIcon(AssetImage("assets/home icon.png"), size: 7 * SizeConfig.blockSizeHorizontal),
+                      icon: ImageIcon(AssetImage("assets/home icon.png"), size: 5.5 * SizeConfig.blockSizeHorizontal),
                       label: ''),
                   BottomNavigationBarItem(
-                      icon: ImageIcon(AssetImage("assets/notif icon.png"), size: 7 * SizeConfig.blockSizeHorizontal),
+                      icon: ImageIcon(AssetImage("assets/notif icon.png"), size: 5.5 * SizeConfig.blockSizeHorizontal),
                       label: ''),
                   BottomNavigationBarItem(
-                      icon: ImageIcon(AssetImage("assets/profile icon.png"), size: 7 * SizeConfig.blockSizeHorizontal),
+                      icon: ImageIcon(AssetImage("assets/profile icon.png"), size: 5.5 * SizeConfig.blockSizeHorizontal),
                       label: '')
                 ],
               ),
