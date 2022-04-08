@@ -71,6 +71,7 @@ flutter:
     - assets/home icon.png
     - assets/library icon.png
     - assets/gift.png
+    - assets/schedule image.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
