@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kiulinks_app/main.dart';
 import 'package:kiulinks_app/utilities/SizeConfig.dart';
 
 class home extends StatelessWidget {

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kiulinks_app/Views/navBar.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:kiulinks_app/utilities/SizeConfig.dart';
 
 void main() {
   runApp(const MyApp());
