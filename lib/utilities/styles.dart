@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'SizeConfig.dart';
 
-class textStyles{
+class styles{
   //used for main big text headings
   static TextStyle heading1(BuildContext context){
     return TextStyle(

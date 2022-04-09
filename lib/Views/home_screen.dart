@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kiulinks_app/Views/schedule_screen.dart';
 import 'package:kiulinks_app/utilities/SizeConfig.dart';
-import 'package:kiulinks_app/utilities/textStyles.dart';
+import 'package:kiulinks_app/utilities/styles.dart';
 
 class home extends StatelessWidget {
   @override
@@ -75,12 +75,12 @@ class home extends StatelessWidget {
             children: [
               Text(
                 "Es un placer recibirte !!",
-                style: textStyles.heading3(context),
+                style: styles.heading3(context),
                 //style: style1,
               ),
               Text(
                 "Elige tu ruta",
-                style: textStyles.heading1(context),
+                style: styles.heading1(context),
               )
             ],
           ),
@@ -120,7 +120,7 @@ class home extends StatelessWidget {
                     Text(
                       "En vivo",
                       //style: Theme.of(context).textTheme.headline2,
-                      style: textStyles.heading2(context),
+                      style: styles.heading2(context),
                     ),
                     SizedBox(
                       height: 5,
@@ -129,7 +129,7 @@ class home extends StatelessWidget {
                         width: width * 0.35,
                         child: Text(
                           "Ingresa a tu próxima clase",
-                          style: textStyles.heading3(context),
+                          style: styles.heading3(context),
                           textAlign: TextAlign.center,
                           //style: Theme.of(context).textTheme.headline5,
                         )),
@@ -168,7 +168,7 @@ class home extends StatelessWidget {
                     Text(
                       "Descurbre",
                       //style: Theme.of(context).textTheme.headline2,
-                      style: textStyles.heading2(context),
+                      style: styles.heading2(context),
                     ),
                     SizedBox(
                       height: 5,
@@ -177,7 +177,7 @@ class home extends StatelessWidget {
                         width: width * 0.35,
                         child: Text(
                           "Nuestros servicios gratis",
-                          style: textStyles.heading3(context),
+                          style: styles.heading3(context),
                           textAlign: TextAlign.center,
                           //style: Theme.of(context).textTheme.headline5,
                         )),
@@ -194,7 +194,7 @@ class home extends StatelessWidget {
               child: Text(
                 "Conectar",
                 //style: Theme.of(context).textTheme.headline1,
-                style: textStyles.heading1(context),
+                style: styles.heading1(context),
               )),
 
         GestureDetector(
@@ -229,14 +229,14 @@ class home extends StatelessWidget {
                 children: [
                   Text(
                     "Comunidad",
-                    style: textStyles.heading2(context),
+                    style: styles.heading2(context),
                     //style: Theme.of(context).textTheme.headline2,
                   ),
                   Container(
                     width: width * 0.5,
                     child: Text(
                       "Acelera tu aprendizaje",
-                      style: textStyles.heading3(context),
+                      style: styles.heading3(context),
                       //style: Theme.of(context).textTheme.headline5,
                     ),
                   ),
@@ -277,14 +277,14 @@ class home extends StatelessWidget {
                 children: [
                   Text(
                     "Chat",
-                    style: textStyles.heading2(context),
+                    style: styles.heading2(context),
                     //style: Theme.of(context).textTheme.headline2,
                   ),
                   Container(
                     width: width * 0.55,
                     child: Text(
                       "Hablar con un representante",
-                      style: textStyles.heading3(context),
+                      style: styles.heading3(context),
                       //style: Theme.of(context).textTheme.headline5,
                     ),
                   ),

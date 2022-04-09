@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:kiulinks_app/utilities/textStyles.dart';
+import 'package:kiulinks_app/utilities/styles.dart';
 
 class schedule extends StatefulWidget {
   @override
