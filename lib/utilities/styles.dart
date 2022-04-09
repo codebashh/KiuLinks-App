@@ -38,4 +38,14 @@ class styles{
     );
   }
 
+  //used for rounded corners of textfields
+  static BorderRadius textField_radius(){
+    return BorderRadius.circular(20);
+  }
+
+  //used for rounded corners of cards
+  static BorderRadius cards_radius(){
+    return BorderRadius.circular(30);
+  }
+
 }
