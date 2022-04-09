@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:kiulinks_app/Views/schedule_screen.dart';
 import 'package:kiulinks_app/utilities/SizeConfig.dart';
+import 'package:kiulinks_app/utilities/textStyles.dart';
 
 class home extends StatelessWidget {
   @override
@@ -13,18 +14,6 @@ class home extends StatelessWidget {
     double smallCardHeight = height * 0.22;
     double cardHorizontalMargin = width * 0.05;
     double  largeCardHeight = height * 0.15;
-
-    TextStyle heading1 = TextStyle(       //used for two main header texts
-          fontSize: 6.2 * SizeConfig.blockSizeHorizontal,
-        fontWeight: FontWeight.w800,
-        color: Theme.of(context).primaryColor);
-    TextStyle heading2 = TextStyle(        //used for header text in cards
-        fontSize: 5.2 * SizeConfig.blockSizeHorizontal,
-        fontWeight: FontWeight.w800,
-        color: Theme.of(context).primaryColor);
-    TextStyle heading3 = TextStyle(       //used for subtext in cards and screen header
-        fontSize: 4.2 * SizeConfig.blockSizeHorizontal,
-        color: Theme.of(context).primaryColor);
 
     return Scaffold(
       backgroundColor: Theme.of(context).backgroundColor,
@@ -86,12 +75,12 @@ class home extends StatelessWidget {
             children: [
               Text(
                 "Es un placer recibirte !!",
-                style: heading3,
+                style: textStyles.heading3(context),
                 //style: style1,
               ),
               Text(
                 "Elige tu ruta",
-                style: heading1,
+                style: textStyles.heading1(context),
               )
             ],
           ),
@@ -131,7 +120,7 @@ class home extends StatelessWidget {
                     Text(
                       "En vivo",
                       //style: Theme.of(context).textTheme.headline2,
-                      style: heading2,
+                      style: textStyles.heading2(context),
                     ),
                     SizedBox(
                       height: 5,
@@ -140,7 +129,7 @@ class home extends StatelessWidget {
                         width: width * 0.35,
                         child: Text(
                           "Ingresa a tu próxima clase",
-                          style: heading3,
+                          style: textStyles.heading3(context),
                           textAlign: TextAlign.center,
                           //style: Theme.of(context).textTheme.headline5,
                         )),
@@ -179,7 +168,7 @@ class home extends StatelessWidget {
                     Text(
                       "Descurbre",
                       //style: Theme.of(context).textTheme.headline2,
-                      style: heading2,
+                      style: textStyles.heading2(context),
                     ),
                     SizedBox(
                       height: 5,
@@ -188,7 +177,7 @@ class home extends StatelessWidget {
                         width: width * 0.35,
                         child: Text(
                           "Nuestros servicios gratis",
-                          style: heading3,
+                          style: textStyles.heading3(context),
                           textAlign: TextAlign.center,
                           //style: Theme.of(context).textTheme.headline5,
                         )),
@@ -205,7 +194,7 @@ class home extends StatelessWidget {
               child: Text(
                 "Conectar",
                 //style: Theme.of(context).textTheme.headline1,
-                style: heading1,
+                style: textStyles.heading1(context),
               )),
 
         GestureDetector(
@@ -240,14 +229,14 @@ class home extends StatelessWidget {
                 children: [
                   Text(
                     "Comunidad",
-                    style: heading2,
+                    style: textStyles.heading2(context),
                     //style: Theme.of(context).textTheme.headline2,
                   ),
                   Container(
                     width: width * 0.5,
                     child: Text(
                       "Acelera tu aprendizaje",
-                      style: heading3,
+                      style: textStyles.heading3(context),
                       //style: Theme.of(context).textTheme.headline5,
                     ),
                   ),
@@ -288,14 +277,14 @@ class home extends StatelessWidget {
                 children: [
                   Text(
                     "Chat",
-                    style: heading2,
+                    style: textStyles.heading2(context),
                     //style: Theme.of(context).textTheme.headline2,
                   ),
                   Container(
                     width: width * 0.55,
                     child: Text(
                       "Hablar con un representante",
-                      style: heading3,
+                      style: textStyles.heading3(context),
                       //style: Theme.of(context).textTheme.headline5,
                     ),
                   ),

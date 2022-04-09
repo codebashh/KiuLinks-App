@@ -1,4 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:kiulinks_app/utilities/textStyles.dart';
+
 class schedule extends StatefulWidget {
   @override
   _scheduleState createState() => _scheduleState();
@@ -16,15 +19,20 @@ class _scheduleState extends State<schedule> {
           child: Column(
             children: [
               Container(
-                width: double.infinity,
-                height: height * 0.3,
+                constraints: BoxConstraints(
+                   maxHeight: height * 0.35,
+                ),
                 decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage("assets/schedule image.png"),
+                  image: DecorationImage(image: AssetImage("assets/schedule img.png"), fit: BoxFit.cover),
+                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30), bottomRight: Radius.circular(30)),
                 ),
               ),
+              SizedBox(height: height * 0.05),
+              Text("Agenda tu clase", style: textStyles.heading1(context).copyWith(color: Colors.white),),
+              SizedBox(height: height * 0.02,),
+              Text("Vive, Aprende y Ama.", style: textStyles.heading4(context).copyWith(color: Colors.white),),
+              Text("Es hora de hacer tus sueños realidad", style: textStyles.heading4(context).copyWith(color: Colors.white),)
 
-            ),
             ],
           ),
         ),
